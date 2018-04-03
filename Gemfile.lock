@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     common_cartridge (1.0.0)
-      rubyzip (~> 1.2)
+      rubyzip (~> 1.1.6)
       sax-machine (~> 0.2.1)
 
 GEM
@@ -25,7 +25,7 @@ GEM
     rspec-mocks (3.0.2)
       rspec-support (~> 3.0.0)
     rspec-support (3.0.2)
-    rubyzip (1.2.1)
+    rubyzip (1.1.7)
     sax-machine (0.2.1)
       nokogiri (~> 1.6.0)
 
