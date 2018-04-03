@@ -53,6 +53,7 @@ module CommonCartridge
 
       class File
         attr_accessor :content
+        attr_accessor :file_data
 
         include SAXMachine
         attribute :href

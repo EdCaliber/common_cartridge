@@ -14,6 +14,7 @@ module CommonCartridge
             Parser.use_file(@zipfile, f.href) do |xml|
               f.content = mapping.last.parse(xml)
               f.content.identifier = resource.identifier
+              f.file_data = xml
               if resource.type =~ CommonCartridge::Elements::Resources::Assignment.pattern && f.href =~ /assignment.*xml/ && !(resource.href =~ /course/)
                 doc = Nokogiri::XML(xml)
                 doc.remove_namespaces!
